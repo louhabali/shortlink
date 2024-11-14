@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shortlink</title>
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+     {{ if . }}
+     <nav class="navbar">
+        <h1 class="site-name">ShortLink</h1>
+        <section>
+         <h2 style="color: rgb(17, 25, 239);">{{ . }}</h2>
+        <a style="text-decoration: none; color: rgb(255, 255, 255);" href="/logout" class="login-button">Log out</a>
+        </section>
+
+    </nav>
+    {{ else }}
+    <nav class="navbar">
+        <h1 class="site-name">ShortLink</h1>
+        <button class="loginbtn">
+            <a style="text-decoration: none; color: rgb(255, 255, 255);" href="/login" class="login-button">Login</a>
+        </button>
+    </nav>
+    {{ end }}
+     <main class="main"> 
+         <h3>Welcome, you can make your link shorter here!</h3>
+        <div>
+            <p>Paste your URL</p>
+            <form action="/newlink" method="post">
+                <input type="text" name="link" placeholder="Enter your URL" required>
+                <input type="submit" value="Submit" id="submitform">
+            </form>
+        </div>
+    </main>
+  
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* auth.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0e1934, #000000);
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background-color: #333;
+    padding: 2em;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 0.8em;
+    font-size: 1em;
+    color: #333;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: #fff;
+    border: 1px solid #4b6cb7;
+}
+
+button {
+    padding: 0.8em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1658f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0d1627;
+}
+
+.return-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.return-link:hover {
+    color: #35599f;
+}

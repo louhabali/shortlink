@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #252525;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+}
+.loginbtn{
+    padding: 0.8em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0e53f3;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #18233c, #000000);
+    color: #fff;
+}
+.hide {
+    display: none;
+}
+
+h3 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    color: #f1f1f1;
+}
+
+div {
+    background-color: #333;
+    padding: 2em;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+p {
+    font-size: 1em;
+    color: #d3d3d3;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    padding: 0.8em;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    background-color: #eee;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background-color: #fff;
+    border: 1px solid #4b6cb7;
+}
+
+input[type="submit"] {
+    padding: 0.8em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1d61ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0d172c;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
